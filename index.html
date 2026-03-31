@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إرسال SMS - Vonage</title>
     <link rel="stylesheet" href="style.css">
-    <title>Vonage SMS Web</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Vonage SMS Web</h1>
-    </header>
-    <main>
-        <p>This is a simple web interface for sending SMS through Vonage.</p>
-    </main>
-    <footer>
-        <p>&copy; 2026 Vonage SMS Web</p>
-    </footer>
+    <div class="container">
+        <h2>نظام إرسال الرسائل القصيرة</h2>
+        <form id="smsForm">
+            <input type="text" id="phone" placeholder="رقم الهاتف (مثال: 967770000000)" required>
+            <textarea id="message" placeholder="اكتب رسالتك هنا..." required></textarea>
+            <button type="submit">إرسال الرسالة</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
