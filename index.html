@@ -2,18 +2,28 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>إرسال SMS - Vonage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innama SMS System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>نظام إنما للرسائل (Innama)</h1>
+    </header>
     <div class="container">
-        <h2>نظام إرسال الرسائل القصيرة</h2>
+        <h2>إرسال رسالة نصية قصيرة</h2>
         <form id="smsForm">
-            <input type="text" id="phone" placeholder="رقم الهاتف (مثال: 967770000000)" required>
-            <textarea id="message" placeholder="اكتب رسالتك هنا..." required></textarea>
-            <button type="submit">إرسال الرسالة</button>
+            <div class="input-group">
+                <label for="phone">رقم المستلم:</label>
+                <input type="text" id="phone" placeholder="96777XXXXXXX" required>
+            </div>
+            <div class="input-group">
+                <label for="message">نص الرسالة:</label>
+                <textarea id="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+            </div>
+            <button type="submit" id="submitBtn">إرسال الآن</button>
         </form>
     </div>
-    <script src="script.js"></script>
+    <script src="send-sms.js"></script>
 </body>
 </html>
